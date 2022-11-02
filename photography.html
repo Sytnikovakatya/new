@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📸Photography</title>
+    <style>
+      body {
+      font-family: 'Raleway',sans-serif;
+      font-size: 16px;
+      line-height: 23px;
+      font-weight: 400;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      background-color: #f5f5f5;
+      color: #8d8d8d;
+      max-width:600px;
+      height: fit-content;
+      margin: 0 auto;
+      padding: 30px 60px;
+    }
+      
+      h1 {
+        color: #34aedb;
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        color: rgb(2,3,129);
+        padding: 25px;
+        font-size: 20px;
+        border-radius: 6px;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 7px 7px 20px rgb(212, 210, 210);
+      }
+      
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 98%;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          width: 600px;
+
+        }
+
+        main {
+        padding: 30px 40px 50px;
+        border: 1px solid transparent;
+        background-color: #fff;
+        box-shadow: 5px 5px 20px grey;
+        }
+
+        a {
+          color: #34aedb;
+          text-decoration: none;
+        }
+
+        a:hover {
+         text-decoration: underline;
+        }
+
+        aside, footer {
+        text-align: center;
+        }
+
+        button {
+          background-color: #34aedb;
+         color: #fff;
+         font-size: 20px;
+         border: none;
+         border-radius: 6px;
+         padding: 25px 30px;
+         box-shadow: 5px 5px 10px grey;
+         transition: all 200ms ease-in-out;
+        }
+
+        button:hover {
+          background: radial-gradient(592px at 48.2% 50%, rgba(209, 218, 233, 0.6) 0%, #34aedb 74.6%);
+          color:#34aedb;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        aside>p {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: larger;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Love photography</h1>
+      <h2>Easy Ways to Start Learning Photography</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/359/original/pR4fNlmE-photography-classes-uae-1200x900.jpg?1663408014"
+        alt="camera"
+      />
+    </header>
+
+    <main>
+      <section clas="description">
+        <p>Photography is more than an art. It's a skill. Professional
+        photographers take time to study and learn their art, learning exactly
+        what is required to take an eye-catching photo. There are seven elements
+        of photography that break down each of the things a true artist should
+        focus on, and they are: <strong><em>line, shape, form, texture, pattern, color and
+        space.</em></strong> Each brings its own unique quality to a picture.</p>
+      </section>
+      <hr>
+
+      <article class="teaching">
+        <span><strong>Can You Teach Yourself Photography?</strong></span>
+        <p>
+          Photography is a hobby you can absolutely teach yourself. Trial and
+          error and frequent practice will help you along as you get comfortable
+          with concepts like exposure, aperture, shutter speed, and more. The
+          first step is buying a camera and a few accessories to use as you grow
+          your skills.
+        </p>
+        <p>
+          Contrary to popular belief, photography isn’t always an expensive
+          hobby. You can learn the craft with whatever camera you have on you
+          and without having to spend a dime. Of course, formal lessons come at
+          a price, but there are many alternatives for you to learn photography
+          and improve your skills without having to spend too much.
+        </p>
+        <div class="improve"><ul>
+          <li>
+            Learn How to Operate Your Camera
+          </li>
+          <li>
+            Enroll Yourself in a Photography Workshop
+          </li>
+          <li>
+            Take Free Online Courses
+          </li>
+          <li>
+            Join Photography Clubs
+          </li>
+          <li>
+            Become an Apprentice
+          </li>
+          <li>
+            Watch Video Tutorials
+          </li>
+          <li>
+            Bring Your Camera Everywhere
+          </li>
+          <li>
+            Challenge Yourself
+          </li>
+        </li></div>
+      </article>
+    </main>
+    
+    <aside>
+      <p>👉 If you want to get started in photography, you can visit for free online
+        <a href="https://www.adorama.com/alc/10-best-free-online-photography-courses/" target="_blank" class="learn-more"
+          >photography classes</a
+        >. </p>
+      <button class="join-us">Join Our Photography Club</button>
+    </aside>
+    <br><br><br>
+    <footer>
+      <p>&#169 This page was built by <a href="#"> Kateryna Sytnikova </a></p>
+    </footer>
+    <script>
+      function join() {
+          let name = prompt('What is your name?');
+          let email = prompt('What is your email adress?');
+          let style = prompt('what kind of photographer you want to be?');
+          
+          if (name.length>0&& email.includes('@')) {
+          alert('Thank you, ' + name + '! We will be in touch by email!📸');
+          }
+            else {
+          alert('Please enter the correct data');
+            }
+        }
+
+      let joinUs = document.querySelector('.join-us');
+      joinUs.addEventListener('click', join);
+    </script>
+  </body>
+</html>
